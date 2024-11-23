@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DK'S Cookies n Pastries</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        color: #333;
+    }
+    header {
+        background-color: #ff6f61;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h2 {
+        color: #ff6f61;
+        text-align: center;
+    }
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 10px;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    tr:hover {
+        background-color: #f9e0df;
+    }
+    footer {
+        background-color: #444;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+    #hiddenContent {
+        display: none; /* Initially hide the hidden content */
+        margin-top: 30px;
+        padding: 20px;
+        border: 2px solid #ff6f61;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        font-size: 20px;
+        color: #ff6f61;
+    }
+    #hiddenContent h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>DK'S Cookies n Pastries</h1>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <h2 id="menu">Our Menu</h2>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>DETAILS</th>
+        </tr>
+        <tr>
+            <td>Chunk Overload</td>
+            <td>185 Peso (50 g)</td>
+            <td>6 pcs</td>
+        </tr>
+        <tr>
+            <td>S'Mores</td>
+            <td>165 Peso</td>
+            <td>6 pcs (50 g)</td>
+        </tr>
+        <tr>
+            <td>Oatmeal</td>
+            <td>175 Peso</td>
+            <td>6 pcs (50 g)</td>
+        </tr>
+        <tr>
+            <td>Red/Blue Velvet Cookies</td>
+            <td>255 Peso</td>
+            <td>6 pcs (50 g)</td>
+        </tr>
+    </table>
+</div>
+
+<div class="container">
+    <h1>Welcome to DK'S Cookies N pastries</h1>
+    <p>We have something special hidden for you. Click the button below to discover it!</p>
+    <button onclick="showContent()">Click Me</button>
+    <!-- Hidden content (put your secret message here) -->
+    <div id="hiddenContent">
+        <h2>Can I Court You? ❤️</h2>
+        <p>I've been wanting to tell you how much you mean to me. I'd love to get to know you better and make you smile every day. Can I have the honor of courting you?</p>
+    </div>
+</div>
+
+<script>
+    function showContent() {
+        const content = document.getElementById('hiddenContent');
+        content.style.display = 'block'; // Makes the hidden content visible
+    }
+</script>
+
+<footer>
+    <p>© 2024 DK'S Cookies n Pastries. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
